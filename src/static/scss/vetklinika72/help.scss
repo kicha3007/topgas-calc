@@ -1,0 +1,87 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+.it-help__wrap {
+  padding: 0 0 10%;
+
+}
+
+.it-help__top {
+  @include row-flex();
+  counter-reset: helpCounter;
+  margin-bottom: -40px;
+  padding-bottom: 13%;
+  justify-content: center;
+}
+
+.it-help__item {
+  @include col();
+  @include size(4);
+  @include size-xs(12);
+  position: relative;
+  padding-top: 80px;
+  margin-bottom: 40px;
+  @include phones {
+    max-width: 200px
+  }
+
+}
+
+.it-help__item:before {
+  content: counter(helpCounter);
+  counter-increment: helpCounter;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  box-sizing: border-box;
+  font-weight: 700;
+  border: 3px solid #72ab33;
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.it-help__item:first-child:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -95px;
+  left: -60px;
+  width: 66px;
+  height: 90px;
+  background: url("../img/vetklinika72/help/arrow.png") 51% no-repeat;
+  @include laptop {
+    display: none;
+  }
+}
+
+.it-help__title {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.it-help__desc {
+  font-size: 14px;
+  color: #666666;
+}
+
+.it-help__bottom-title {
+  color:  #333333 ;
+  font-size: rem(24px);
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.it-help__input-wrap {
+  padding-bottom: 20px;
+}

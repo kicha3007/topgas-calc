@@ -1,0 +1,39 @@
+section.it-callback
+	.it-container.it-container--mobile
+		.it-callback__outer-wrap
+			.it-callback__outer-half.it-callback__outer-half--left
+				.it-callback__title
+					|    Закажите консультацию:
+				.it-callback__subtitle
+					|	Оставьте заявку, и мы вам перезвоним
+				form.it-callback__form(action="", method="post")
+					.it-callback__input-wrap
+						.it-callback__half
+							input.it-callback__input(type="text" name='NAME', maxlength='200', value='', placeholder='Имя и фамилия', required)
+						.it-callback__half
+							input.it-callback__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='Ваш телефон', data-phone='true', required,)
+						.it-callback__half.it-callback__buttons
+							a(href="").it-btn.it-callback__btn Отправить
+
+					.it-checkbox-wrap.it-callback__checkbox-wrap
+						label.it-checkbox
+							input.it-checkbox__default(type="checkbox" name="AGREE" checked)
+							span.it-checkbox__pseudo
+							span.it-checkbox__text
+								|    Подтверждаю свое согласие на &#32;
+								a(href="#it-modal-privacy" data-fancybox=).it-checkbox__link
+									|	обработку персональных данных
+						.it-form__success
+							| Спасибо!
+							br
+							|  Ваша заявка принята.
+			.it-callback__outer-half.it-callback__outer-half--right
+				.it-callback__content
+					.it-callback__titme
+						|    Пн. – Пт.: с 9:00 до 18:00
+					.it-callback__phone
+						a(href="tel:+73452739669").it-callback__phone-text
+							|	+7 (3452) 73-96-69
+						br
+						a(href="tel:+79199348155").it-callback__phone-text
+							| 	+7 (919) 934-81-55

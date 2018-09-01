@@ -1,0 +1,78 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+.it-symptoms {
+  padding: 0 0 4%;
+  background-color: #E3E3E3;
+}
+
+.it-symptoms__wrap {
+  @include row-flex();
+  margin-bottom: -40px;
+  counter-reset: symptomsCounter;
+  padding-bottom: 10%;
+
+}
+
+.it-symptoms__item {
+  @include col();
+  @include size(4);
+  @include size-sm(6);
+  @include size-xs(12);
+  margin-bottom: 40px;
+  align-items: center;
+  padding-left: 70px;
+  position: relative;
+
+}
+
+.it-symptoms__item:before {
+  content: counter(symptomsCounter);
+  counter-increment: symptomsCounter;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  font-size: rem(24px);
+  color: #333333;
+  font-family: "Roboto",sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-weight: 700;
+  border: 3px solid #72AB33;
+  border-radius: 50%;
+}
+
+.it-symptoms__title {
+  font-size: 14px;
+  color: #666666;
+  font-weight: 400;
+
+}
+
+.it-symptoms__bottom-title {
+  font-size: rem(16px);
+  color: #333333;
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+
+
+/******************* collback-mod *******************/
+
+.it-symptoms__input-wrap {
+ padding-bottom: 20px;
+}
+
+.it-symptoms__input-half {
+  max-width: 350px;
+}
+
+.it-symptoms__input-buttons {
+  max-width: 251px;
+}

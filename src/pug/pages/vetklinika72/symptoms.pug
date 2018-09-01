@@ -1,0 +1,51 @@
+section.it-symptoms
+	.it-container
+		.it-all-title
+			|   Симптомы, которые требуют обращения к ветеринару!
+		.it-symptoms__wrap
+			.it-symptoms__item
+				.it-symptoms__title
+					|    Внезапная слабость
+					br
+					| или вялость животного
+			.it-symptoms__item
+				.it-symptoms__title
+					|    Резкое изменение
+					br
+					|	в поведении животного
+			.it-symptoms__item
+				.it-symptoms__title
+					|    Не понятные виделения
+					br
+					| из носа и глаз
+			.it-symptoms__item
+				.it-symptoms__title
+					|    Отсутствие аппетита
+			.it-symptoms__item
+				.it-symptoms__title
+					|    Диарея или запор
+			.it-symptoms__item
+				.it-symptoms__title
+					|    Рвота, частая отдышка
+		.it-symptoms__bottom
+			.it-symptoms__bottom-title
+				|	Заметили у питомца такие симптомы? Не откладывайте с оказанием помощи, запишитесь на прием:
+			form.it-callback__form(action="", method="post")
+				.it-callback__input-wrap.it-symptoms__input-wrap
+					.it-callback__input-half.it-symptoms__input-half
+						input.it-callback__input(type="text" name='NAME', maxlength='200', value='', placeholder='Ваше имя', required)
+					.it-callback__input-half.it-symptoms__input-half
+						input.it-callback__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='Ваш телефон', required)
+					.it-callback__input-half.it-callback__input-buttons.it-symptoms__input-buttons
+						a(href="").it-btn.it-callback__btn
+							|	Записаться на прием
+				.it-checkbox-wrap
+					label.it-checkbox
+						input.it-checkbox__default(type="checkbox" name="AGREE" checked)
+						span.it-checkbox__pseudo
+						span.it-checkbox__text
+							|    Подтверждаю свое согласие на обработку персональных данных
+					.it-form__success
+						| Спасибо!
+						br
+						|  Ваша заявка принята.

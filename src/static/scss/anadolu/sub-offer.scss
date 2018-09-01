@@ -1,0 +1,37 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+.it-sub-offer {
+  background-color: #E8F0F4;
+  padding: 25px 0;
+  @include phones {
+    background-color: #F3F3F3;
+  }
+
+}
+
+.it-sub-offer__wrap {
+  @include row-flex();
+  position: relative;
+}
+
+
+.it-sub-offer__half {
+  @include col();
+  @include size-xs(12);
+}
+
+.it-sub-offer__half--left {
+  @include size(7);
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+.it-sub-offer__half--right {
+  @include size(5);
+}
+

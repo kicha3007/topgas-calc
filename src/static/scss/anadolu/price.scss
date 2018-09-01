@@ -1,0 +1,218 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+/******************* price *******************/
+
+.it-price__desc ul,
+.it-price__list {
+  margin: 0;
+  padding: 0;
+}
+
+
+.it-price__item {
+  list-style-type: none;
+
+}
+
+.it-price__list-item {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2) ;
+  align-items: center;
+}
+
+.it-price__list-item:last-child {
+  border-bottom: none;
+}
+
+
+.it-price__item-half {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+
+}
+
+.it-price__item-half--left {
+  flex-grow: 1;
+  flex-basis: 185px;
+  padding-left: 7%;
+  order: 1;
+  @include phones {
+      order: 2;
+    flex-basis: 100px;
+    padding-left: 10px;
+
+  }
+}
+
+.it-price__item-half--center {
+  flex-basis: 155px;
+  padding-left: 10px;
+  max-width: 155px;
+  order: 2;
+  @include phones {
+    display: none;
+  }
+
+
+}
+
+.it-price__item-half--right {
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 40px;
+  align-items: flex-start;
+  max-width: 160px;
+  flex-basis: 150px;
+  font-weight: 700;
+  order: 3;
+
+  @include phones {
+      order: 1;
+    padding-left: 0;
+    flex-basis: 60px;
+  }
+
+}
+
+.it-price__toggle {
+  padding: 19.5px 60px 19.5px 7%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  background-color: #1AACCE;
+  margin-top: 20px;
+  @include phones {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+
+.it-price__list .it-price__item:first-child .it-price__toggle {
+  margin-top: 0;
+}
+
+.it-price__title {
+  font-size: 16px;
+  flex-grow: 1000;
+  color: #ffffff;
+  font-weight: 700;
+  flex-basis: 160px;
+  margin: 0;
+  padding: 0;
+}
+
+.it-price__sign-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF732E;
+}
+
+
+
+.it-price__sign-wrap:not(.active):after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -2px;
+  width: 4px;
+  height: 22px;
+  margin-top: -11px;
+  background-color: #ffffff;
+}
+
+.it-price__sign-wrap:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -11px;
+  width: 22px;
+  height: 4px;
+  margin-top: -2px;
+  background-color: #ffffff;
+}
+
+.it-price__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.it-price__desc {
+  width: 100%;
+  font-weight: 300;
+  font-family: "Ubuntu",sans-serif;
+  font-size: 1rem;
+  flex-basis: 400px;
+  flex-grow: 1000;
+  padding-right: 0;
+}
+
+
+.it-price__desc li {
+  list-style-type: none;
+  padding: 19px 0;
+  font-size: 14px;
+  color: #333;
+  border-top: none;
+
+}
+
+.it-price__desc li:last-child {
+  margin-bottom: -20px;
+}
+
+
+.it-accordion__link-wrap {
+  text-align: center;
+}
+
+.it-accordion__link {
+  text-decoration: underline !important;
+  color: #2196F3;
+  font-size: 18px;
+}
+
+.it-accordion__link:hover {
+  color: #2196F3;
+  text-decoration: none;
+}
+
+.it-accordion__link:active,
+.it-accordion__link:visited {
+  color: #2196F3;
+  text-decoration: underline !important;
+}
+
+.it-problems  .box-problems {
+  background-color: #ffffff;
+}
+
+.it-price__buttons--show-mobile {
+  display: none;
+  @include phones {
+    display: block;
+    margin-top: 20px;
+  }
+}
+

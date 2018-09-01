@@ -1,0 +1,33 @@
+header.it-header
+	.it-header__top-wrap
+		.it-container
+			.it-header__top
+				.it-header__half.it-header__half--size-1
+					a.it-logo(href='/')
+						.it-logo__img-box
+							img.it-logo__img(src='static/img/pro-burim72/header/logo.png', alt='logo')
+				.it-header__half.it-header__half--size-2
+					.it-location.it-location--icon
+						|	г. Тюмень, ул. Милиораторов,
+						br
+						|	д.1 к.1 (цех № 18)
+				.it-header__half.it-header__half--size-3
+					.it-mail.it-mail--icon
+						|	602145@mail.ru
+				.it-header__half.it-header__half--size-4
+					.it-phone.it-phone--icon
+						a(href="tel:+73452788717").it-phone__text
+							|	+7 (3452)
+							b
+								|	788-717
+						.it-header__buttons
+							a(href="#").it-header__btn
+								|	Заказать звонок
+	.it-header__bottom-wrap
+		.it-container
+			.it-header__bottom
+				.it-header__half.it-header__half--size-5
+					include nav
+				.it-header__half.it-header__half--size-6
+					include search
+

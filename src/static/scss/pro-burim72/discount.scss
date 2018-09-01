@@ -1,0 +1,51 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+.it-discount__wrap {
+  @include row-flex();
+  margin-bottom: -40px;
+}
+
+.it-discount__half {
+  @include col();
+  @include size(6);
+  @include size-sm(12);
+  margin-bottom: 40px;
+}
+
+.it-discount__half--left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5% 4%;
+  background-color: #34A0CD;
+}
+
+.it-discount__half--right {
+  @include phones {
+    display: none;
+  }
+}
+
+.it-discount__title {
+  font-weight: 700;
+  font-size: rem(24px);
+  line-height: 1.5;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.it-discount__desc {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.it-discount__buttons {
+  max-width: 170px;
+  width: 100%;
+  @include phones {
+      margin: 0 auto;
+  }
+}

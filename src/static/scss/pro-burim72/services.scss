@@ -1,0 +1,47 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+.it-services__wrap {
+  @include row-flex();
+  margin-bottom: -20px;
+  overflow: hidden;
+}
+
+.it-services__item {
+  @include col();
+  @include size(4);
+  @include size-xs(12);
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 40px 20px;
+  border: 1px solid  #34A0CD;
+}
+
+.it-services__img-box {
+  height: 75px;
+  max-width: 200px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.it-services__title {
+  color: #666666;
+  font-size: rem(18px);
+  font-weight: 700;
+  min-height: 50px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.it-services__buttons {
+  max-width: 170px;
+  width: 100%;
+  display: inline-block;
+}

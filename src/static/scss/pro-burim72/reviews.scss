@@ -1,0 +1,155 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+.it-reviews {
+  padding: 0 0  80px;
+}
+
+
+.it-reviews__item {
+  max-width: 319px;
+  width: 100%;
+  @include laptop {
+    max-width: 100%;
+  }
+}
+
+.it-reviews__video {
+  max-height: 178px;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+
+}
+
+.it-reviews__video:hover {
+	text-decoration: none;
+}
+
+.it-reviews__video:active,
+.it-reviews__video:visited {
+	text-decoration: none;
+}
+
+.it-reviews__title {
+  color: #666666;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.it-reviews__title b {
+  color: #444444;
+}
+
+.it-reviews__link {
+  margin-bottom: 15px;
+  color:rgba(52, 160, 205, 1);
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.it-reviews__link:hover {
+	color: rgba(52, 160, 205, 0.7);
+   text-decoration: none;
+}
+
+.it-reviews__link:active,
+.it-reviews__link:visited {
+	color: rgba(52, 160, 205, 1);
+	text-decoration: none;
+}
+
+/******************* reviews+owl *******************/
+
+.it-reviews .owl-carousel .owl-nav {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  max-width: 180px;
+  margin-left: -90px;
+  width: 100%;
+
+}
+
+.it-reviews .owl-carousel .owl-next, .it-reviews .owl-carousel .owl-prev {
+  width: 36px;
+  height: 36px;
+  font-size: 0;
+  background-color: #34A0CD;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+}
+
+.it-reviews .owl-carousel .owl-next:hover, .it-reviews .owl-carousel .owl-prev:hover {
+  opacity: .5
+}
+
+.it-reviews .owl-carousel .owl-next:after, .it-reviews .owl-carousel .owl-prev:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  left: 50%;
+  margin-left: -3px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 5px solid  #ffffff;
+  border-bottom: 5px solid transparent;
+  background-color: transparent;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.it-reviews .owl-carousel .owl-prev:after {
+  transform: scale(-1);
+
+
+}
+
+.it-reviews .owl-carousel .owl-next:after {
+  transform: scale(1);
+  margin-left: 0;
+  margin-right: -3px;
+}
+
+.it-reviews .owl-carousel .owl-prev {
+  float: left;
+}
+
+.it-reviews .owl-carousel .owl-next {
+  float: right;
+}
+
+/******************* reviews+owl-dots *******************/
+
+.it-reviews .owl-carousel .owl-dots {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  z-index: 10000;
+  max-width: 120px;
+  width: 100%;
+  margin-left: -60px;
+  text-align: center;
+}
+
+
+
+.it-reviews .owl-carousel .owl-dots .owl-dot {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 6px;
+  height: 6px;
+  background: #C4C4C4;
+  border-radius: 50%;
+  transition: .2s;
+  margin: 0 8px;
+}
+
+.it-reviews .owl-carousel .owl-dots .owl-dot.active, .it-reviews .owl-carousel .owl-dots .owl-dot:hover {
+  background-color: $main-color;
+}

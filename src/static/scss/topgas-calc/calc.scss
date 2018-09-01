@@ -1,0 +1,133 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+@import "../base";
+
+.it-calc {
+  margin-top: 80px;
+}
+
+.it-calc .it-container{
+  border: 1px solid grey;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.it-calc__inner-wrap {
+  @include row-flex();
+}
+
+.it-calc__half {
+  @include col();
+}
+
+.it-calc__half--left {
+  @include size(5);
+  //@include size-lg(6);
+  @include size-xs(12);
+}
+
+.it-calc__half--right {
+  @include size(7);
+  //@include size-lg(6);
+  @include size-xs(12);
+  padding-right: 3%;
+}
+
+.it-calc__input-wrap {
+  margin-bottom: 30px;
+}
+
+.it-calc__input {
+  font-size: 14px;
+  padding: 9.5px 20px;
+  color: rgba(0, 0, 0, 0.38);
+  width: 100%;
+  line-height: 1.42;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.it-calc__input::-webkit-input-placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.it-calc__input::-moz-placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.it-calc__input:-ms-input-placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.it-calc__input:-moz-placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.it-calc__input--disabled {
+
+}
+
+.it-calc__input-title {
+  color: #000000;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.38462;
+}
+
+.it-calc__input--size-1 {
+  max-width: 250px;
+  width: 100%;
+}
+
+.it-calc__input--hide-border {
+  border: none;
+}
+
+.it-calc__input-title--style-1 {
+  color: #4ba82e;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.it-calc__all-input-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  overflow: hidden;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin-bottom: 30px;
+}
+
+.it-calc__input-wrap--size-1 {
+  max-width: 130px;
+  width: 100%;
+  margin: 0 10px;
+}
+.it-calc__input--border-1 {
+  border-top: 0;
+  border-bottom: 0;
+  border-left: none;
+  border-right: none;
+}
+
+.it-calc__input-title--style-2 {
+  border-bottom: 1px solid gray;
+  min-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: gray;
+  font-weight: 700;
+  padding: 15px 0 ;
+  margin-bottom: 0;
+}
+
+.it-calc__input--disabled-2 {
+  background-color: #ffffff;
+}
+.it-calc__input-title--style-3 {
+  color: #4ba82e;
+  font-size: 22px;
+  font-weight: 700;
+}

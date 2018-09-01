@@ -1,0 +1,54 @@
+section.it-help
+	.it-container
+		.it-all-title
+			|    Получить помощь очень просто!
+		.it-help__wrap
+			.it-help__top
+				.it-help__item
+					.it-help__title
+						|	Запись на прием
+					.it-help__desc
+						|    Вы записываетесь
+						br
+						| на прием
+				.it-help__item
+					.it-help__title
+						|	Консультация
+					.it-help__desc
+						|    Вам перезванивает наш
+						br
+						|	специалист, подробно
+						br
+						|	консультирует
+				.it-help__item
+					.it-help__title
+						|	Оказание помощи
+					.it-help__desc
+						|    Вы приходите на прием, мы
+						br
+						|	оказываем помощь вашему
+						br
+						|	питомцу
+			.it-help__bottom
+				.it-help__bottom-title
+					|    Запись на прием:
+				form.it-callback__form(action="", method="post")
+					.it-callback__input-wrap.it-help__input-wrap
+						.it-callback__input-half.it-help__input-half
+							input.it-callback__input(type="text" name='NAME', maxlength='200', value='', placeholder='Ваше имя', required)
+						.it-callback__input-half.it-help__input-half
+							input.it-callback__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='Ваш телефон', required)
+						.it-callback__input-half.it-callback__input-buttons.it-help__input-buttons
+							a(href="").it-btn.it-callback__btn
+								|    Записаться на прием
+					.it-checkbox-wrap
+						label.it-checkbox
+							input.it-checkbox__default(type="checkbox" name="AGREE" checked)
+							span.it-checkbox__pseudo
+							span.it-checkbox__text
+								|    Подтверждаю свое согласие на обработку персональных данных
+						.it-form__success
+							| Спасибо!
+							br
+							|  Ваша заявка принята.
+				

@@ -1,0 +1,31 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+/******************* it-clients *******************/
+
+.it-clients__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 -30px -25px;
+  overflow: hidden;
+  padding: 0 ;
+}
+
+.it-clients__item {
+  list-style-type: none;
+  margin: 0 30px 25px;
+  padding-left: 0;
+  outline-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.it-clients__img {
+  max-width: 100%;
+  width: auto ;
+  display: block;
+}

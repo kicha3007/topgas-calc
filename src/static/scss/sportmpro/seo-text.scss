@@ -1,0 +1,12 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+
+.it-seo-text ,
+.it-seo-text p {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 14px;
+  font-weight: 300;
+
+}

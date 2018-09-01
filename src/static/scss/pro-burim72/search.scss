@@ -1,0 +1,60 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+
+
+
+
+.it-search {
+  width: 100%;
+  max-width: 360px;
+  position: relative;
+}
+
+.it-search__input {
+  border-radius: 3px;
+  padding: 10px 10px;
+  border: 1px solid rgba(80, 66, 66, 0.2);
+  width: 100%;
+  font-size: 14px;
+  @include phones {
+    padding: 5px 5px;
+  }
+}
+
+.it-search__btn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin-top: -15px;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+.it-search__input::-webkit-input-placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.it-search__input::-moz-placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.it-search__input:-ms-input-placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.it-search__input:-moz-placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}

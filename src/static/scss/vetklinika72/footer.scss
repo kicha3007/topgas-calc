@@ -1,0 +1,83 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+
+.it-footer__wrap {
+  overflow: hidden;
+  padding: 6% 0;
+  @include row-flex();
+  margin-bottom: -20px;
+
+}
+
+.it-footer__column {
+  @include col();
+  @include size(4);
+  @include size-xs(12);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+
+
+.it-footer__column,
+.it-footer__copy,
+.it-developer,
+.it-footer__column p  {
+  font-size: 14px;
+  color: #999999;
+  line-height: 1.5;
+}
+
+.it-footer__column p {
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+.it-footer__contacts {
+  margin-bottom: 10px;
+}
+
+.it-footer  .it-phone--color {
+  color: #999999;
+}
+
+.it-location +  .it-phone {
+  margin-top: 20px;
+}
+
+.it-footer__btn {
+  text-decoration: underline;
+  color: $main-color;
+  padding-left: 35px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.it-footer__social-title {
+  font-size: 14px;
+  color: #999999;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.it-developer {
+  margin-top: auto;
+}
+
+.it-developer__text {
+  font-size: 14px;
+  color: #333333;
+}
+
+.it-developer__img {
+  margin: 0 3px 0 15px;
+}
+
+.it-social--indent {
+  margin-bottom: 10px;
+}

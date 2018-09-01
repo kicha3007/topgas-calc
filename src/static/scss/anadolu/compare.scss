@@ -1,0 +1,127 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+.it-compare {
+  max-width: 850px;
+  margin: 0 auto;
+  overflow: hidden;
+  @include phones {
+    display: none;
+  }
+}
+
+.it-compare__wrap {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.2) 1%, #ffffff 0);
+  background-size: 100% 60px;
+  background-position: 0 -1px;
+}
+
+.it-compare__list {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  max-width: 850px;
+  width: 100%;
+  margin: 0;
+  position: relative;
+
+}
+
+
+.it-compare__list:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  width: 1000px;
+  height: 90px;
+  background-color: #ffffff;
+}
+
+
+.it-compare__item {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 16%;
+  @include phones {
+    width: 20%;
+  }
+
+}
+
+.it-compare__column {
+  background-color: #1AACCE;
+  padding: 30px 2px 316%;
+
+  @include phones {
+    padding-top: 10px;
+  }
+}
+
+.it-compare__numeric {
+  color: #ffffff;
+  font-size: rem(24px);
+  font-weight: 700;
+  text-align: center;
+  @include phones {
+    font-size: 16px;
+  }
+}
+
+.it-compare__column--size-2 {
+  padding-bottom: 150%;
+
+}
+
+.it-compare__column--size-3 {
+  padding-bottom: 120%;
+
+}
+
+.it-compare__column--size-4 {
+  padding-bottom: 20%;
+
+}
+
+.it-compare__title {
+  text-align: center;
+  font-weight: 700;
+  color: #000;
+  font-size: rem(24px);
+  padding: 20px 2px;
+  position: relative;
+  z-index: 10;
+  @include phones {
+    font-size: 16px;
+  }
+}
+
+.it-compare__note {
+  position: absolute;
+  right: 80px;
+  top: 0;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 14px;
+  padding-left: 30px;
+
+
+
+}
+
+.it-compare__note:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #1AACCE;
+}

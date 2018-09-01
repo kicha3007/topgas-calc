@@ -1,0 +1,156 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+.it-modal {
+  max-width: 565px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  margin: 0 auto;
+  display: none;
+}
+
+.it-modal--size {
+  max-width: 516px;
+}
+
+.it-modal__top {
+  background-color: #1AACCE;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 7% 7%;
+  @include phones {
+    padding: 5%;
+  }
+}
+
+.it-modal__content {
+  padding: 7% 7%;
+  @include phones {
+    padding: 5%;
+  }
+}
+
+
+.it-modal__img-box {
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 86px;
+  height: 86px;
+  @include phones {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.it-modal__half--left {
+  margin-right: 35px;
+  @include phones {
+    margin-right: 15px;
+  }
+
+}
+
+.it-modal__half--right {
+  flex-basis: 150px;
+  flex-grow: 1;
+}
+
+.it-modal__half {
+
+}
+
+.it-modal__title {
+  color: #FFFFFF;
+  font-size: rem(24px);
+  font-weight: 700;
+  margin-bottom: 15px;
+  @include phones {
+    font-size: 20px;
+  }
+}
+
+.it-modal__desc {
+  font-size: 14px;
+  color: #ffffffff;
+}
+
+.it-modal__callback-title {
+  color: #000000;
+  margin-bottom: 15px;
+  font-size: 14px;
+  @include phones {
+    margin-bottom: 10px;
+  }
+}
+
+.it-modal__callback-half {
+  margin-bottom: 25px;
+  @include phones {
+    margin-bottom: 20px;
+  }
+}
+
+.it-modal__checkbox-wrap {
+  margin-bottom: 30px;
+  @include phones {
+    margin-bottom: 20px;
+  }
+}
+
+.fancybox-close {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+}
+
+.fancybox-close:hover {
+  opacity: 0.7;
+}
+
+.fancybox-close:before, .fancybox-close:after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 18px;
+  width: 2px;
+  margin-top: -9px;
+  background-color: #423c3c;
+}
+.fancybox-close:before {
+  transform: rotate(45deg);
+}
+.fancybox-close:after {
+  transform: rotate(-45deg);
+}
+
+
+.it-modal-privacy__wrap {
+  padding: 60px 60px;
+  border: 3px solid #E5E5E5;
+}
+
+.it-modal-privacy__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.it-modal-privacy__wrap,
+.it-modal-privacy__wrap p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.it-modal-privacy__wrap p {
+  margin-bottom: 25px;
+}

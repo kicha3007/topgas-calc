@@ -1,0 +1,60 @@
+section.it-calc
+	.it-container
+		.it-calc__wrap
+			form.it-calc__form(action="", method="post")
+				.it-calc__inner-wrap
+					.it-calc__half.it-calc__half--left
+						.it-calc__input-wrap
+							.it-calc__input-title.it-calc__input-title--size-1
+								|	Замещение (сколько будет метана)
+							input.it-calc__input.it-calc__input--disabled.it-calc__input--size-1(type='text', name='replacement', maxlength='400', value='', placeholder='0,45', data-phone='true', required, disabled)
+						.it-calc__input-wrap
+							.it-calc__input-title
+								|	Пробег км от заправки до заправки метаном
+								br
+								|	(для рассчета баллонов)
+							input.it-calc__input.it-calc__input--size-1(type='text', name='replacement', maxlength='400', value='', placeholder='', data-phone='true', required)
+						.it-calc__input-wrap
+							.it-calc__input-title
+								|	годовой пробег тыс км
+							input.it-calc__input.it-calc__input--size-1(type='text', name='replacement', maxlength='400', value='', placeholder='', data-phone='true', required)
+						.it-calc__input-wrap
+							.it-calc__input-title
+								|	Расход ДТ (л. На 100 км)
+							input.it-calc__input.it-calc__input--size-1(type='text', name='replacement', maxlength='400', value='', placeholder='', data-phone='true', required)
+						.it-calc__input-wrap
+							.it-calc__input-title
+								|	Цена литра ДТ
+							input.it-calc__input.it-calc__input--size-1(type='text', name='replacement', maxlength='400', value='', placeholder='', data-phone='true', required)
+						.it-calc__input-wrap
+							.it-calc__input-title
+								|	Цена КУБА Метана
+							input.it-calc__input.it-calc__input--size-1(type='text', name='replacement', maxlength='400', value='', placeholder='', data-phone='true', required)
+						button.it-btn.it-calc__btn
+							| Рассчиатать
+					.it-calc__half.it-calc__half--right
+						.it-calc__input-wrap
+							.it-calc__input-title.it-calc__input-title--style-1
+								|    Экономия в год РУБ
+							input.it-calc__input.it-calc__input--hide-border.it-calc__input--disabled-2(type='text', name='replacement', maxlength='400', value='', placeholder='', data-phone='true', required disabled)
+						.it-calc__all-input-wrap
+							.it-calc__input-wrap.it-calc__input-wrap--size-1
+								.it-calc__input-title.it-calc__input-title--style-2
+									|    Стоимость установки
+								input.it-calc__input.it-calc__input--hide-border.it-calc__input--disabled-2(type='text', name='replacement', maxlength='400', value='', placeholder='', data-phone='true', required disabled)
+							.it-calc__input-wrap.it-calc__input-wrap--size-1
+								.it-calc__input-title.it-calc__input-title--style-2
+									|    Окупиться через тыс км
+								input.it-calc__input.it-calc__input--border-1.it-calc__input--disabled-2(type='text', name='replacement', maxlength='400', value='', placeholder='', data-phone='true', required disabled)
+							.it-calc__input-wrap.it-calc__input-wrap--size-1
+								.it-calc__input-title.it-calc__input-title--style-2
+									|    Количество баллонов шт
+								input.it-calc__input.it-calc__input--border-1.it-calc__input--disabled-2(type='text', name='replacement', maxlength='400', value='', placeholder='', data-phone='true', required disabled)
+						.it-calc__input-wrap
+							.it-calc__input-title.it-calc__input-title--style-3
+								|    Окупится через месяцев
+								input.it-calc__input.it-calc__input--hide-border.it-calc__input--disabled-2(type='text', name='replacement', maxlength='400', value='', placeholder='', data-phone='true', required disabled)
+
+
+				
+				

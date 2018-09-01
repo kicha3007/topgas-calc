@@ -1,0 +1,53 @@
+.it-base-form
+	.it-base-form__title
+		|	Сделать запрос о цене лечения
+	form.it-base-form__form(action="", method="post")
+		.it-base-form__input-wrap
+			.it-base-form__half.it-base-form__half--size-full
+				input.it-base-form__input(type="text" name='NAME', maxlength='200', value='', placeholder='Имя и фамилия', required)
+			.it-base-form__half
+				input.it-base-form__input(type="text" name='AGE', maxlength='200', value='', placeholder='Возраст пациента', required data-input-number-clear)
+			.it-base-form__half
+				.it-base-form__select-wrap
+					select.it-base-form__select(name='type-of-ill', required='')
+						option(selected disabled hidden)
+							|    Тип заболевания
+						option(value='рак простаты', )
+							|    рак простаты
+						option(value='рак груди', )
+							|    рак груди
+						option(value='рак желудка', )
+							| рак желудка
+						option(value='рак легких', )
+							|    рак легких
+						option(value='рак матки', )
+							|	рак матки
+						option(value='опухоль или вторичный очаг головного мозга')
+							|	опухоль или вторичный очаг головного мозга
+			.it-base-form__half
+				input.it-base-form__input(type='mail', name='MAIL', maxlength='200', value='', placeholder='E-mail', required)
+			.it-base-form__half
+				input.it-base-form__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='Ваш телефон', data-phone='true', required)
+			.it-base-form__half.it-base-form__half--size-full.it-base-form__half--indent
+				textarea.it-base-form__textarea(name="comment" placeholder="Текст сообщения" maxlength="1000")
+			.it-checkbox-wrap.it-base-form__checkbox-wrap
+				label.it-checkbox
+					input.it-checkbox__default(type="checkbox" name="AGREE" checked)
+					span.it-checkbox__pseudo
+					span.it-checkbox__text
+						|    Подтверждаю свое согласие на &#32;
+						a(href="#it-modal-privacy" data-fancybox=).it-checkbox__link
+							|    обработку персональных данных
+			.it-base-form__buttons-wrap
+				.it-base-form__half.it-base-form__buttons.it-base-form__buttons--size-1
+					label.it-base-form__file-label
+						input.it-base-form__file#add_file(name='file', type='file' data-file-default accept="application/msword, text/plain, application/pdf")
+						span.it-base-form__file-btn.it-btn Прикрепить результаты обследований
+						.it-base-form__file-name(data-file-name)
+					//.it-base-form__file-prompt
+				.it-base-form__half.it-base-form__buttons.it-base-form__buttons--size-2
+					a(href="").it-btn.it-base-form__btn Отправить
+			.it-form__success
+				| Спасибо!
+				br
+				|  Ваша заявка принята.

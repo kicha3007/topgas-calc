@@ -1,0 +1,48 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+.it-photo__wrap {
+  @include row-flex();
+  margin-bottom: -20px;
+  padding: 0;
+}
+
+.it-photo__item {
+  @include col();
+  @include size(3);
+  @include size-sm(6);
+  @include size-xs(12);
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  list-style-type: none;
+  padding-left: 0;
+  justify-content: center;
+}
+
+.it-photo__img-box {
+  display: block;
+  align-items: flex-start;
+  max-width: 236px;
+  width: 100%;
+  max-height: 212px;
+  text-decoration: none;
+
+}
+
+
+.it-photo__img-box:hover {
+	text-decoration: none;
+}
+
+.it-photo__img-box:active,
+.it-photo__img-box:visited {
+	text-decoration: none;
+}
+
+.it-photo__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

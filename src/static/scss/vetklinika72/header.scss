@@ -1,0 +1,270 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+/******************* it-header *******************/
+
+
+.it-header__wrap {
+ // overflow: hidden;
+}
+
+.it-header__top {
+  padding: 2% 0 0 0;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -20px 0;
+}
+
+.it-header__column {
+  max-width: 205px;
+  width: 100%;
+  flex-basis: 150px;
+  flex-grow: 1;
+  margin: 0 20px 20px;
+}
+
+.it-header__column--2 {
+  max-width: 130px;
+  @include phones {
+    max-width: 150px;
+    padding-right: 25px;
+  }
+}
+
+.it-header__column--3 {
+  max-width: 300px;
+}
+
+.it-header__column--4 {
+  max-width: 200px;
+}
+
+.it-header__bottom-wrap {
+  background-color: #72AB33;
+}
+
+.it-header__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px -20px;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.it-header__bottom__half {
+  margin: 0 20px 20px;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.it-header__bottom__half--left {
+  max-width: 240px;
+
+}
+
+.it-header__bottom__half--right {
+  flex-grow: 1;
+  max-width: 650px;
+}
+
+.it-location {
+  padding-left: 25px;
+  position: relative;
+
+}
+
+.it-location:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 23px;
+  top: -4px;
+  left: 0;
+  background: url("../img/vetklinika72/header/location.png") no-repeat  left center;
+}
+
+.it-location__text {
+  font-size: 12px;
+  color: #666666;
+}
+
+.it-social {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 -10px -10px;
+
+  overflow: hidden;
+}
+
+.it-social__item {
+list-style-type: none;
+  padding-left: 0;
+  margin: 0 10px 10px;
+}
+
+.it-social__link {
+  border-radius: 50%;
+  background-color: #72AB33;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $main-color;
+  transition: 0.2s;
+}
+
+.it-social__obgect {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.it-social__item:hover .it-social__link {
+  background-color: transparent;
+}
+
+.it-social__item:hover  .it-social__img {
+  fill: $main-color;
+
+}
+
+
+
+.it-social__img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+
+}
+
+
+.it-logo__img-box {
+
+  width: 100%;
+  max-height: 65px;
+  overflow: hidden;
+}
+
+.it-logo__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+
+
+.it-header__phone-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.it-phone {
+  font-size: rem(16px);
+  color: #333333;
+  font-weight: 300;
+  text-decoration: none;
+  position: relative;
+  padding-left: 25px;
+  display: block;
+
+}
+
+.it-phone__text {
+  margin-left: 10px;
+}
+
+.it-phone:hover {
+  color: #333333;
+  text-decoration: none;
+}
+
+.it-phone:active,
+.it-phone:visited {
+  color: #333333;
+  text-decoration: none;
+}
+
+.it-phone__img-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.it-phone:hover .it-phone__img {
+  animation: 1200ms ease 0s normal none 1 running shake;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  10% {
+    transform: rotateZ(-30deg);
+  }
+  20% {
+    transform: rotateZ(15deg);
+  }
+  30% {
+    transform: rotateZ(-10deg);
+  }
+  40% {
+    transform: rotateZ(7.5deg);
+  }
+  50% {
+    transform: rotateZ(-6deg);
+  }
+  60% {
+    transform: rotateZ(5deg);
+  }
+  70% {
+    transform: rotateZ(-4.28571deg);
+  }
+  80% {
+    transform: rotateZ(3.75deg);
+  }
+  90% {
+    transform: rotateZ(-3.33333deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+
+.it-header__buttons {
+  width: 100%;
+}
+
+.it-header__btn b {
+  transition: 0.2s;
+}
+
+.it-header__btn:hover b {
+  color: #ffffff;
+}
+
+.it-header .it-header__btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

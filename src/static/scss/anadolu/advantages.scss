@@ -1,0 +1,110 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+.it-advantages__top {
+  @include phones {
+    background-color: #F3F3F3;
+  }
+}
+
+.it-advantages__wrap {
+  padding: 0;
+  margin: 0;
+  @include row-flex();
+
+}
+
+.it-advantages__item {
+  list-style-type: none;
+  padding-left: 0;
+  @include col();
+  @include size(3);
+  @include size-md(6);
+  @include size-xs(12);
+  margin-bottom: 40px;
+}
+
+.it-advantages__text {
+  font-size: rem(18px);
+  padding-bottom: 40px;
+  color: rgba(0, 0, 0, 0.54);
+  text-align: center;
+  @include phones {
+    margin-top: 30px;
+  }
+}
+
+.it-advantages__list {
+  padding: 0;
+  @include row-flex();
+  margin-bottom: -40px;
+  overflow: hidden;
+}
+
+.it-advantages__list-item {
+  list-style-type: none;
+  @include col();
+  @include size(6);
+
+  @include size-xs(12);
+  border: 1px solid #E5E5E5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 20px;
+  margin-bottom: 40px;
+}
+
+.it-advantages__list-img-box {
+  max-width: 185px;
+  width: 100%;
+  min-height: 143px;
+  overflow: hidden;
+}
+
+.it-advantages__list-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.it-advantages__title {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 25px;
+  border-bottom: 4px solid #1AACCE;
+  margin-bottom: 25px;
+}
+
+.it-advantages__desc {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  min-height: 100px;
+  @include phones {
+    min-height: auto;
+    margin-bottom: 40px;
+  }
+}
+
+.it-advantages__img-box {
+  max-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.it-advantages__img-box + .it-advantages__img-box {
+  margin-top: 40px;
+}
+
+.it-advantages__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

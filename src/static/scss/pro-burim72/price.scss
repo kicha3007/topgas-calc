@@ -1,0 +1,44 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+
+.it-price__inner-table tr:nth-child(even) {
+  background-color: #F2F2F2;
+}
+
+.it-price__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.it-price__inner-table th {
+  color: #666666;
+  font-size: rem(18px);
+  font-weight: 700;
+  text-align: left;
+  padding: 10px 30px;
+  @include phones {
+    padding: 10px 3px;
+    font-size: 15px;
+    text-align: left;
+  }
+}
+
+.it-price__inner-table td {
+  color: #666666;
+  font-size: 14px;
+  padding: 20px 30px;
+  @include phones {
+    padding: 10px 3px;
+    font-size: 14px;
+  }
+
+}
+
+.it-price__inner-table tr td:first-child {
+  @include phones {
+    max-width: 180px;
+  }
+}
+

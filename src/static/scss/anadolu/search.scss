@@ -1,0 +1,53 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+
+
+.it-search {
+  width: 100%;
+  position: relative;
+}
+
+.it-search .it-search__input {
+  padding: 14.5px 20px;
+  border: none;
+  width: 100%;
+  font-size: 14px;
+
+}
+
+.it-search__btn {
+  background-color: #1AACCE;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+.it-search__input::-webkit-input-placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.it-search__input::-moz-placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.it-search__input:-ms-input-placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.it-search__input:-moz-placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}

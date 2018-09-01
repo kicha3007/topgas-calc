@@ -1,0 +1,217 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+
+
+.it-doctors__wrap {
+  margin:  60px 0 0;
+  padding: 0 ;
+  @include tablets {
+    margin-top: 0;
+  }
+}
+
+.it-doctors__item {
+  list-style-type: none;
+  padding-left: 0;
+  @include row-flex();
+  justify-content: center;
+  margin-bottom: -40px;
+}
+
+.it-doctors__half {
+  margin-bottom: 40px;
+}
+
+.it-doctors__half--left {
+  @include col();
+  @include size(5);
+  @include size-sm(12);
+}
+
+.it-doctors__half--right {
+  @include col();
+  @include size(7);
+  @include size-sm(12);
+
+
+}
+
+.it-doctors__title {
+  font-size: rem(24px);
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+
+.it-doctors__subtitle {
+  color: #000000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+.it-doctors__video-box {
+  width: 100%;
+  max-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  @include phones {
+      margin: 0 auto;
+  }
+
+
+}
+
+.it-doctors__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.it-doctors__desc {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+  margin-bottom: 35px;
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 550px;
+}
+
+.it-doctors__content  {
+  @include tablets {
+    text-align: center;
+  }
+}
+
+
+/******************* doctors+owl *******************/
+
+.it-doctors .owl-carousel .owl-nav {
+  position: absolute;
+  top: -75px;
+  left: 50%;
+  max-width: 200px;
+  margin-left: -100px;
+  width: 100%;
+  @include tablets {
+    position: static;
+  }
+
+
+}
+
+.it-doctors .owl-carousel .owl-next, .it-doctors .owl-carousel .owl-prev {
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  @include tablets {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 34px;
+    height: 34px;
+    font-size: 0;
+    border-radius: 50%;
+    background-color: #3A3C3E;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
+
+.it-doctors .owl-carousel .owl-next:hover, .it-doctors .owl-carousel .owl-prev:hover {
+  opacity: .5
+}
+
+.it-doctors .owl-carousel .owl-next:after, .it-doctors .owl-carousel .owl-prev:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url("../img/vetklinika72/base/arrow.png") 51% no-repeat;
+  @include tablets {
+    width: 0;
+    height: 0;
+    border-left: 6px solid #ffffff;
+    border-right: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    z-index: 2;
+
+  }
+}
+
+.it-doctors .owl-carousel .owl-prev:after {
+  transform: scale(-1);
+  @include tablets {
+    margin-left: -6px;
+  }
+
+}
+
+.it-doctors .owl-carousel .owl-next:after {
+  transform: scale(1);
+  @include tablets {
+    margin-right: -9px;
+  }
+}
+
+.it-doctors .owl-carousel .owl-prev {
+  float: left;
+  @include tablets {
+    left: 20px;
+    right: auto;
+  }
+}
+
+.it-doctors .owl-carousel .owl-next {
+  float: right;
+  @include tablets {
+    right: 20px;
+    left: auto;
+  }
+}
+
+/******************* doctors+owl-dots *******************/
+/*
+
+.it-doctors .owl-carousel .owl-dots {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  z-index: 10000;
+  max-width: 120px;
+  width: 100%;
+  margin-left: -60px;
+  text-align: center;
+}
+
+.it-doctors .owl-carousel .owl-dots .owl-dot {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ffffff;
+  background: #B5B5B5;
+  border-radius: 50%;
+  transition: .2s;
+  margin: 0 8px;
+}
+
+.it-doctors .owl-carousel .owl-dots .owl-dot.active, .it-doctors .owl-carousel .owl-dots .owl-dot:hover {
+  background-color: #1AACCE;
+  border-color: #1AACCE;
+}
+
+*/
+

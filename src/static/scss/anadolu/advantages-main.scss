@@ -1,0 +1,60 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+.it-advantages-main {
+  display: none;
+  @include phones {
+    display: block;
+  }
+}
+
+.it-advantages-main__wrap {
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.it-advantages-main__top {
+  margin-bottom: 20px;
+}
+
+.it-advantages-main__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: -25px;
+  overflow: hidden;
+}
+
+.it-advantages-main__item {
+  list-style-type: none;
+  padding-left: 0;
+  position: relative;
+  max-width: 330px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.it-advantages-main__desc {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+  text-align: center;
+}
+
+.it-advantages-main__img-box{
+  width: 60px;
+  height: 70px;
+  border: 1px solid #000000;
+  background-position:  center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}

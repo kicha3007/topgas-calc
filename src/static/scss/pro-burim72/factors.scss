@@ -1,0 +1,79 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+.it-factors {
+  border: 1px solid #34A0CD;
+  padding: 40px 0;
+  @include phones {
+    padding-bottom: 0;
+  }
+}
+
+.it-factors__main-title {
+  color: #444444;
+  font-size: rem(26px);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.it-factors__main-subtitle {
+  color: #666666;
+  font-size: 16px;
+  margin-bottom: 35px;
+  text-align: center;
+
+}
+
+.it-factors__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -60px;
+  overflow: hidden;
+  @include laptop {
+    justify-content: center;
+  }
+  @include tablets {
+    margin-bottom: 50px;
+  }
+  @include phones {
+    margin-bottom: 0;
+
+  }
+}
+
+.it-factors__item {
+  margin: 0 75px 60px;
+  @include laptop {
+    margin: 0 60px 60px;
+  }
+  @include tablets {
+    margin: 0 40px 60px;
+  }
+  @include phones {
+    width: 100%;
+  }
+}
+
+.it-factors__img-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 73px;
+  margin-bottom: 20px;
+}
+
+.it-factors__title {
+  text-align: center;
+}
+.it-factors__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  font-size: 16px;
+  color: #666666;
+}

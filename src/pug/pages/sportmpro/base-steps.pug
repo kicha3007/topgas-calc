@@ -1,0 +1,174 @@
+// --------------------- it-steps -------------------------
+section.it-base-steps.it-all--indent#it-base-steps
+	.it-container
+		.it-base-steps__wrap
+			.it-base-steps__title(data-calculation-title)
+				b
+					|	Калькулятор:
+				|    рассчитайте стоимость изготовления
+			.it-base-steps__item
+				.it-base-steps__step-wrap
+					.it-base-steps__step-inner-wrap
+						.it-base-steps__step-number
+							|	1
+						.it-base-steps__step-text.active(data-calculation-text='1')
+							|	Базовые
+							br
+							|	параметры
+					.it-base-steps__step-inner-wrap
+						.it-base-steps__step-number
+							|	2
+						.it-base-steps__step-text(data-calculation-text='2')
+							|	Дополнительные
+							br
+							|	опции
+					.it-base-steps__step-inner-wrap.it-base-steps__step-inner-wrap--size
+						.it-base-steps__step-number
+							|	3
+						.it-base-steps__step-text(data-calculation-text='3')
+							|    Отправка
+							br
+							| заявки
+				.it-base-steps__step-line
+					.it-base-steps__line-inner(data-it-line-inner='')
+					.it-base-steps__line-dot.active.it-base-steps__line-dot--one(data-dot-line="1")
+					.it-base-steps__line-dot.it-base-steps__line-dot--two(data-dot-line="2")
+					.it-base-steps__line-dot.it-base-steps__line-dot--three(data-dot-line="3")
+				form.it-base-steps__form.it-form--hide(action='/sendCallBack.php', data-it-form='')
+					ul.it-base-steps__inner-wrap
+						li.it-base-steps__inner-item(data-it-calculation-item='1')
+							.it-base-steps__item-wrap.it-base-steps__item-wrap--indent
+								.it-base-steps__item-half
+									.it-base-steps__item-half-title
+										|	Выберите размер:
+									.it-base-steps__select-wrap
+										select.it-base-steps__select(name='Размер', required='' )
+											option(value='15 x 22', selected='', data-calc-size="76")
+												| 15 x 22
+											option(value='40 x 60' data-calc-size="240")
+												| 40 x 60
+											option(value='70 x 105' data-calc-size="441")
+												| 70 x 105
+											option(value='90 x 135' data-calc-size="608")
+												| 90x 135
+											option(value='100x 150' data-calc-size="600")
+												| 100x 150
+											option(value='150 x 225' data-calc-size="1350 ")
+												| 150 x 225
+											option(value='200 x 300' data-calc-size="2400")
+												| 200 x 300
+								.it-base-steps__item-half.it-base-steps__item-half--size1
+									.it-base-steps__item-half-title
+										|    Количество:
+									.it-base-steps__input-inner-wrap
+										.it-base-steps__input-sign(data-sign-minus)
+											|    -
+										input.it-base-steps__input-sign(name="Количество" value="1" data-sign-value  ).it-base-steps__input-quantity
+										.it-base-steps__input-sign(data-sign-plus)
+											|    +
+								.it-base-steps__item-half
+									.it-base-steps__item-half-title
+										|    Выберите исполнение:
+									.it-base-steps__select-wrap
+										select.it-base-steps__select(name='print', required='' )
+											option(value='Односторонняя печать', selected='', data-calc-print="1"  )
+												| Односторонняя печать
+											option(value='Двухсторонняя печать' data-calc-print="2")
+												|	Двухсторонняя печать
+								.it-base-steps__item-half.it-base-steps__item-half-file
+									.it-base-steps__item-half-title
+										|   Загрузите логотип:
+									label.it-callback__file-label.it-base-steps__file-label
+										input.it-callback__file#add_file(name='file', type='file' data-file-default accept="image/jpeg,image/png,image/gif" )
+										span.it-callback__file-title.it-base-steps__file-title.it-btn.it-btn--transparent Прикрепить
+										.it-callback__file-name(data-file-name='')
+
+								.it-validate-error
+									| Заполните поля
+						li.it-base-steps__inner-item(data-it-calculation-item='2').it-base-steps__inner-item--ov-visible
+							.it-base-steps__item-wrap.it-base-steps__item-wrap--ov-visible
+								.it-base-steps__item-half.it-base-steps__item-half--size2
+									.it-base-steps__item-half-title.it-base-steps__item-half-title--indent
+										|    Прошив флага по краю
+										br
+										| (+10% к стоимости)
+										.it-base-steps__item-title-prompt
+											img(src="static/img/base-steps/2.png", alt='').it-base-steps__item-title-prompt-img
+											.it-base-steps__item-prompt-popup
+												| По периметру флаг обрабатывается двойной строчкой. Используется для увеличения срока службы флага.
+									.it-base-steps__select-wrap.it-base-steps__select-wrap--size
+										select.it-base-steps__select.it-base-steps__select--size(name='sewing', required='' )
+											option(value='Да', selected='', data-calc-sewing-area="1")
+												| Да
+											option(value='Нет' data-calc-sewing-area="0" )
+												| Нет
+								.it-base-steps__item-half.it-base-steps__item-half--size3
+									.it-base-steps__item-half-title.it-base-steps__item-half-title--indent
+										|    Способ крепления
+										br
+										|	древка (пластик)
+										.it-base-steps__item-title-prompt
+											img(src="static/img/base-steps/2.png", alt='').it-base-steps__item-title-prompt-img
+											.it-base-steps__item-prompt-popup
+												| Шест, изготовленный из пластика, на него закрепляется флаг.
+									.it-base-steps__select-wrap
+										select.it-base-steps__select(name='bracing', required='' )
+											option(value='По высоте', selected='', )
+												| По высоте
+											option(value='По ширине')
+												| По ширине
+								.it-base-steps__item-half.it-base-steps__item-half--size4
+									.it-base-steps__item-half-title.it-base-steps__item-half-title--indent
+										|    Услуги дизайнера:
+										.it-base-steps__item-title-prompt
+											img(src="static/img/base-steps/2.png", alt='').it-base-steps__item-title-prompt-img
+											.it-base-steps__item-prompt-popup
+												| По периметру флаг обрабатывается двойной строчкой. Используется для увеличения срока службы флага.
+									.it-base-steps__select-wrap
+										select.it-base-steps__select(name='designer', required='' )
+											option(value='У меня есть логотип/макет в векторе', selected='' , data-calc-designer="0")
+												| У меня есть логотип/макет в векторе
+											option(value='Разработка логотипа/макета с нуля (до 3 вариантов)'  data-calc-designer="1500")
+												| Разработка логотипа/макета с нуля (до 3 вариантов)
+
+
+
+
+						li.it-base-steps__inner-item(data-it-calculation-item='3')
+							.it-base-steps__inner-item-top
+								.it-base-steps__item-half.it-base-steps__item-half--size5
+									.it-base-steps__item-half-title
+										|    Внесите ваши контакты:
+									input.it-base-steps__input(type="text" name='NAME', maxlength='200', value='', placeholder='Ваше имя', required)
+									input.it-base-steps__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='Ваш телефон', data-phone='true', required, data-mask='phone')
+								.it-base-steps__item-half
+									.it-base-steps__item-half-title
+										|    Стоимость вашего заказа:
+
+									.it-base-steps__sum
+										span(data-calc-sum).it-base-steps__sum-number
+											|00 &#32;
+										|	руб.
+							.it-base-steps__inner-item-bottom
+								textarea.it-base-steps__textarea(name="комментарий" placeholder="Комментарий" maxlength="1000")
+								.it-base-steps__checkbox-wrap.it-base-steps__checkbox-wrap--indent
+									label.it-checkbox.it-base-steps__checkbox--size
+										input.it-base-steps__checkbox-default(type="checkbox" name="AGREE" checked)
+										span.it-base-steps__checkbox-pseudo
+										span.it-base-steps__checkbox-text.it-base-steps__checkbox-text--color
+											|    Подтверждаю свое согласие на обработку персональных данных
+
+
+
+
+					.it-base-steps__buttons
+						button.it-btn.it-base-steps__btn.it-base-steps__btn--prev(type='button', data-it-btn='prev')
+							| Назад
+							button.it-btn.it-base-steps__btn.it-base-steps__btn--next.it-btn--arrow.active(type='button', data-it-btn='next')
+								| Далее
+							button.it-btn.it-base-steps__btn.it-base-steps__btn--send(type='submit', data-it-btn='send')
+								| Отправить
+						.it-form__success
+							p Спасибо!
+							p Ваша заявка принята
+

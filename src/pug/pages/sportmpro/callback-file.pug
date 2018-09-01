@@ -1,0 +1,32 @@
+section.it-callback.it-all--indent
+	.it-container
+		.it-callback__wrap
+			.it-callback-title
+				|    Есть техзадание на изготовление флага?
+			.it-callback-subtitle
+				|	Отправьте его нам, и мы скажем, сможем ли изготовить такой же флаг
+			form.it-callback__form(action="", method="post")
+				.it-callback__input-wrap
+					.it-callback__half.it-callback__half--size2
+						input.it-callback__input(type="text" name='NAME', maxlength='200', value='', placeholder='Ваше имя', required)
+					.it-callback__half.it-callback__half--size2
+						input.it-callback__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='Ваш телефон', data-phone='true', required, data-mask='phone')
+					.it-callback__half.it-file__callback-half.it-callback__half--size2
+						label.it-callback__file-label
+							input.it-callback__file#add_file(name='file', type='file' data-file-default accept="application/msword, text/plain, application/pdf")
+							span.it-callback__file-title.it-btn.it-btn--transparent Прикрепить файл
+							.it-callback__file-name(data-file-name)
+						.it-callback__file-prompt
+							|    doc, txt, pdf. Размер не более 5 Mb
+					.it-callback__half.it-callback__buttons.it-callback__buttons--size2
+						a(href="").it-btn.it-callback__btn Отправить
+				.it-checkbox-wrap.it-callback__checkbox-wrap
+					label.it-checkbox.it-checkbox--size
+						input.it-checkbox__default(type="checkbox" name="AGREE" checked)
+						span.it-checkbox__pseudo
+						span.it-checkbox__text
+							|	Подтверждаю свое согласие на обработку персональных данных
+					.it-form__success
+						| Спасибо!
+						br
+						|  Ваша заявка принята.

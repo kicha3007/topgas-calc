@@ -1,0 +1,97 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+.it-service {
+  padding: 0 0 5%;
+}
+
+.it-service__wrap {
+  @include row-flex();
+  margin-bottom: -40px;
+
+}
+
+.it-service__item {
+  @include col();
+  @include size(3);
+  @include size-sm(6);
+  @include size-xs(12);
+  margin-bottom: 40px;
+}
+
+.it-service__title {
+  font-size: rem(16px);
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 30px;
+  min-height: 44px;
+}
+
+.it-service__list {
+  margin: 0;
+  padding: 0;
+}
+
+.it-service__list li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+
+.it-service__list li a {
+  color: #666666;
+  font-size: 14px;
+  text-decoration: none;
+
+}
+
+.it-service__list li a:hover {
+	color: #72AB33 !important;
+	text-decoration: none;
+   font-weight: 700;
+}
+
+.it-service__list li a:active,
+.it-service__list li a:visited {
+	color: #666666;
+	text-decoration: none;
+}
+
+.it-service__link {
+  font-size: 14px;
+  color:  #72AB33;
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.it-service__link:hover {
+	color: $main-color-hover;
+	text-decoration: underline;
+}
+
+.it-service__link:active,
+.it-service__link:visited {
+	color: #72AB33;
+	text-decoration: none;
+}
+
+
+.it-building__wrap  {
+  @include row-flex();
+  margin-bottom: -25px;
+}
+
+.it-building__item {
+  @include col();
+  @include size(3);
+  @include size-sm(6);
+  @include size-xs(12);
+  margin-bottom: 25px;
+}
+
+.it-building__buttons {
+  max-width: 288px;
+  margin: 0 auto;
+}

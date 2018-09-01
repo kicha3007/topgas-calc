@@ -1,0 +1,89 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+.it-about-us__wrap {
+  @include row-flex();
+  margin-bottom: -20px;
+  overflow: hidden;
+}
+
+.it-about-us__item {
+  @include col();
+  @include size(4);
+  @include size-xs(12);
+  margin-bottom: 20px;
+  position: relative;
+  padding: 4.5% 4%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.it-about-us__item:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+.it-about-us__item--size {
+  @include col();
+  @include size(8);
+  @include size-xs(12);
+}
+
+.it-about-us__item--bg-1 {
+  background-image: url(../img/pro-burim72/about-us/1.jpg);
+}
+.it-about-us__item--bg-2 {
+  background-image: url(../img/pro-burim72/about-us/2.jpg);
+}
+.it-about-us__item--bg-3 {
+  background-image: url(../img/pro-burim72/about-us/3.jpg);
+}
+.it-about-us__item--bg-4 {
+  background-image: url(../img/pro-burim72/about-us/4.jpg);
+}
+.it-about-us__item--bg-5 {
+  background-image: url(../img/pro-burim72/about-us/5.jpg);
+}
+
+.it-about-us__content {
+  position: relative;
+  z-index: 2;
+}
+
+.it-about-us__title {
+  font-weight: 700;
+  font-size: rem(24px);
+  position: relative;
+  padding-bottom: 35px;
+  color: #ffffff;
+}
+
+.it-about-us__title:before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 18px;
+	left: 0;
+	width: 40px;
+	height: 4px;
+  background-color:  $main-color;
+}
+
+.it-about-us__desc {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.it-about-us__desc b {
+  color: #ffffff;
+}

@@ -1,0 +1,29 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+
+.it-gallery__wrap {
+  @include row-flex();
+  margin-bottom: -40px;
+}
+
+.it-gallery__item {
+  @include col();
+  @include size(3);
+  @include size-xs(6);
+  margin-bottom: 40px;
+  max-width: 202px;
+  width: 100%;
+  max-height: 191px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.it-gallery__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
