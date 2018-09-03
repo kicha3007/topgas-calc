@@ -22,52 +22,58 @@
                   <div class="it-calc__half it-calc__half--left">
                     <div class="it-calc__input-wrap">
                       <div class="it-calc__input-title it-calc__input-title--size-1">	Замещение (сколько будет метана)</div>
-                      <input class="it-calc__input it-calc__input--disabled it-calc__input--size-1" type="text" name="replacement" maxlength="400" value="" placeholder="0,45" data-phone="true" required disabled>
+                      <input class="it-calc__input it-calc__input--disabled it-calc__input--size-1" type="text" name="replacement" maxlength="400" value="0.45" placeholder="0,45" data-phone="true" required="" disabled="" data-calc-input="substitution">
                     </div>
                     <div class="it-calc__input-wrap">
-                      <div class="it-calc__input-title">	Пробег км от заправки до заправки метаном<br>	(для рассчета баллонов)</div>
-                      <input class="it-calc__input it-calc__input--size-1" type="text" name="replacement" maxlength="400" value="" placeholder="" data-phone="true" required>
+                      <div class="it-calc__input-title">Пробег км от заправки до заправки метаном<br>	(для рассчета баллонов)</div>
+                      <input class="it-calc__input it-calc__input--size-1" type="text" name="replacement" maxlength="400" value="600" placeholder="" data-phone="true" required="" data-calc-input="run">
                     </div>
                     <div class="it-calc__input-wrap">
-                      <div class="it-calc__input-title">	годовой пробег тыс км</div>
-                      <input class="it-calc__input it-calc__input--size-1" type="text" name="replacement" maxlength="400" value="" placeholder="" data-phone="true" required>
+                      <div class="it-calc__input-title">	Годовой пробег тыс км</div>
+                      <input class="it-calc__input it-calc__input--size-1" type="text" name="replacement" maxlength="400" value="240" placeholder="" data-phone="true" required="" data-calc-input="year-run">
                     </div>
                     <div class="it-calc__input-wrap">
                       <div class="it-calc__input-title">	Расход ДТ (л. На 100 км)</div>
-                      <input class="it-calc__input it-calc__input--size-1" type="text" name="replacement" maxlength="400" value="" placeholder="" data-phone="true" required>
+                      <input class="it-calc__input it-calc__input--size-1" type="text" name="replacement" maxlength="400" value="45" placeholder="" data-phone="true" required="" data-calc-input="consumption-fuel">
                     </div>
                     <div class="it-calc__input-wrap">
                       <div class="it-calc__input-title">	Цена литра ДТ</div>
-                      <input class="it-calc__input it-calc__input--size-1" type="text" name="replacement" maxlength="400" value="" placeholder="" data-phone="true" required>
+                      <input class="it-calc__input it-calc__input--size-1" type="text" name="replacement" maxlength="400" value="41" placeholder="" data-phone="true" required="" data-calc-input="price-liter-fuel">
                     </div>
                     <div class="it-calc__input-wrap">
                       <div class="it-calc__input-title">	Цена КУБА Метана</div>
-                      <input class="it-calc__input it-calc__input--size-1" type="text" name="replacement" maxlength="400" value="" placeholder="" data-phone="true" required>
+                      <input class="it-calc__input it-calc__input--size-1" type="text" name="replacement" maxlength="400" value="12" placeholder="" data-phone="true" required="" data-calc-input="price-cube-fuel">
+                      <input class="it-calc__input" type="text" name="replacement" maxlength="400" value="100" placeholder="Рассчетный объем баллона, литры" data-phone="true" required="" disabled="" hidden="" data-calc-input="cylinder-volume">
+                      <input class="it-calc__input" type="text" name="replacement" maxlength="400" value="200" placeholder="Рассчетный объем баллона, литры" data-phone="true" required="" disabled="" hidden="" data-calc-input="price-liter">
+                      <input class="it-calc__input" type="text" name="replacement" maxlength="400" value="2000" placeholder="Рассчетный объем баллона, литры" data-phone="true" required="" disabled="" hidden="" data-calc-input="price-valve">
+                      <input class="it-calc__input" type="text" name="replacement" maxlength="400" value="140000" placeholder="Рассчетный объем баллона, литры" data-phone="true" required="" disabled="" hidden="" data-calc-input="price-electrical-kit">
+                      <input class="it-calc__input" type="text" name="replacement" maxlength="400" value="150000" placeholder="Рассчетный объем баллона, литры" data-phone="true" required="" disabled="" hidden="" data-calc-input="price-jobs">
+                      <input class="it-calc__input" type="text" name="replacement" maxlength="400" value="30000" placeholder="Рассчетный объем баллона, литры" data-phone="true" required="" disabled="" hidden="" data-calc-input="price-frame">
                     </div>
                     <button class="it-btn it-calc__btn">Рассчиатать</button>
                   </div>
                   <div class="it-calc__half it-calc__half--right">
                     <div class="it-calc__input-wrap">
                       <div class="it-calc__input-title it-calc__input-title--style-1">   Экономия в год РУБ</div>
-                      <input class="it-calc__input it-calc__input--hide-border it-calc__input--disabled-2" type="text" name="replacement" maxlength="400" value="" placeholder="" data-phone="true" required disabled>
+                      <input class="it-calc__input it-calc__input--hide-border it-calc__input--disabled-2 it-calc__input--hidden" type="text" name="replacement" maxlength="400" value="" placeholder="" data-phone="true" required="" disabled="" data-calc-input="saving-money">
                     </div>
                     <div class="it-calc__all-input-wrap">
                       <div class="it-calc__input-wrap it-calc__input-wrap--size-1">
                         <div class="it-calc__input-title it-calc__input-title--style-2">   Стоимость установки</div>
-                        <input class="it-calc__input it-calc__input--hide-border it-calc__input--disabled-2" type="text" name="replacement" maxlength="400" value="" placeholder="" data-phone="true" required disabled>
+                        <input class="it-calc__input it-calc__input--hide-border it-calc__input--disabled-2 it-calc__input--hidden" type="text" name="replacement" maxlength="400" value="" placeholder="" data-phone="true" required="" disabled="" data-calc-input="price-installation">
                       </div>
                       <div class="it-calc__input-wrap it-calc__input-wrap--size-1">
                         <div class="it-calc__input-title it-calc__input-title--style-2">   Окупиться через тыс км</div>
-                        <input class="it-calc__input it-calc__input--border-1 it-calc__input--disabled-2" type="text" name="replacement" maxlength="400" value="" placeholder="" data-phone="true" required disabled>
+                        <input class="it-calc__input it-calc__input--border-1 it-calc__input--disabled-2 it-calc__input--hidden" type="text" name="replacement" maxlength="400" value="" placeholder="" data-phone="true" required="" disabled="" data-calc-input="recoupment-distance">
                       </div>
                       <div class="it-calc__input-wrap it-calc__input-wrap--size-1">
                         <div class="it-calc__input-title it-calc__input-title--style-2">   Количество баллонов шт</div>
-                        <input class="it-calc__input it-calc__input--border-1 it-calc__input--disabled-2" type="text" name="replacement" maxlength="400" value="" placeholder="" data-phone="true" required disabled>
+                        <input class="it-calc__input it-calc__input--border-1 it-calc__input--disabled-2 it-calc__input--hidden" type="text" name="replacement" maxlength="400" value="" placeholder="" data-phone="true" required="" disabled="" data-calc-input="number-of-cylinders">
                       </div>
                     </div>
                     <div class="it-calc__input-wrap">
-                      <div class="it-calc__input-title it-calc__input-title--style-3">   Окупится через месяцев
-                        <input class="it-calc__input it-calc__input--hide-border it-calc__input--disabled-2" type="text" name="replacement" maxlength="400" value="" placeholder="" data-phone="true" required disabled>
+                      <div class="it-calc__input-title it-calc__input-title--style-3">Окупится через месяцев
+                        <input class="it-calc__input it-calc__input--hide-border it-calc__input--disabled-2" type="text" name="replacement" maxlength="400" value="" placeholder="" data-phone="true" required="" disabled="" data-calc-input="recoupment-month">
                       </div>
                     </div>
                   </div>

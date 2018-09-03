@@ -3,6 +3,15 @@
 @import "../smart-grid";
 @import "../base";
 
+
+.it-calc__input--hidden {
+  /*display: none;*/
+}
+
+.it-calc__input--hidden.active {
+  display: block;
+}
+
 .it-calc {
   margin-top: 80px;
 }
